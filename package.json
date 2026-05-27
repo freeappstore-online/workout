@@ -1,0 +1,24 @@
+{
+  "name": "freeworkoutapp",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm --filter @workout/web dev",
+    "build": "pnpm --filter @workout/web build",
+    "preview": "pnpm --filter @workout/web preview",
+    "typecheck": "pnpm --filter @workout/web exec tsc -b",
+    "test": "pnpm --filter @workout/web test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/workout.git"
+  }
+}
