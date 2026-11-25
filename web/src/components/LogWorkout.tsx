@@ -302,7 +302,7 @@ export default function LogWorkout({
                         handleSetChange(entryIdx, setIdx, "reps", Number(e.target.value))
                       }
                       placeholder="Reps"
-                      className="flex-1 px-2 py-1.5 rounded-lg text-sm text-center"
+                      className="flex-1 min-w-0 px-2 py-1.5 rounded-lg text-sm text-center"
                       style={{
                         background: "var(--paper)",
                         border: "1px solid var(--line)",
@@ -318,7 +318,7 @@ export default function LogWorkout({
                         handleSetChange(entryIdx, setIdx, "weight", Number(e.target.value))
                       }
                       placeholder={weightUnit}
-                      className="flex-1 px-2 py-1.5 rounded-lg text-sm text-center"
+                      className="flex-1 min-w-0 px-2 py-1.5 rounded-lg text-sm text-center"
                       style={{
                         background: "var(--paper)",
                         border: "1px solid var(--line)",
@@ -327,7 +327,7 @@ export default function LogWorkout({
                     />
                     <button
                       onClick={() => handleRemoveSet(entryIdx, setIdx)}
-                      className="w-8 h-8 flex items-center justify-center rounded cursor-pointer text-xs"
+                      className="w-8 h-8 shrink-0 flex items-center justify-center rounded cursor-pointer text-xs"
                       style={{
                         background: "transparent",
                         border: "none",
